@@ -1,0 +1,88 @@
+/* Remove default spacing */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Full screen Container */
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.box {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+}
+
+.red {
+    top: 0%;
+    left: 0%;
+    background: red;
+}
+
+.green {
+    top: 0%;
+    right: 0%;
+    background: green;
+}
+
+.orange {
+    bottom: 0%;
+    left: 0%;
+    background: rgb(255, 190, 69);
+}
+
+.pink {
+    bottom: 0%;
+    right: 0%;
+    background: rgb(255, 0, 149);
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background: white;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background: red;
+}
+
+/* Center White Box */
+.center-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    background: white;
+}
+
+/* Center Red Circle */
+.center-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    background: red;
+    border-radius: 50%;
+}
