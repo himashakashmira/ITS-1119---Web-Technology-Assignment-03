@@ -1,15 +1,14 @@
-/* Remove default spacing */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* Full screen Container */
 .container {
     position: relative;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 .box {
@@ -19,49 +18,95 @@
 }
 
 .red {
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
     background: red;
 }
 
 .green {
-    top: 0%;
-    right: 0%;
+    top: 0;
+    right: 0;
     background: green;
 }
 
 .orange {
-    bottom: 0%;
-    left: 0%;
-    background: rgb(255, 190, 69);
+    bottom: 0;
+    left: 0;
+    background: #daac15;
 }
 
 .pink {
-    bottom: 0%;
-    right: 0%;
-    background: rgb(255, 0, 149);
+    bottom: 0;
+    right: 0;
+    background: #ff0095;
 }
 
+/* White Circle inside box */
 .box::before {
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     background: white;
+    border-radius: 50%;
 }
 
+/* Red Square inside the white circle */
 .box::after {
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background: red;
+}
+
+/* Edge and Half Circles */
+.edge {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: white;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+/* edges Position */
+.top-left { 
+    top: -60px; 
+    left: -60px; 
+}
+
+.top-center { 
+    top: -60px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.top-right { 
+    top: -60px; 
+    right: -60px; 
+}
+
+.bottom-left { 
+    bottom: -60px; 
+    left: -60px; 
+}
+
+.bottom-center { 
+    bottom: -60px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.bottom-right { 
+    bottom: -60px; 
+    right: -60px; 
 }
 
 /* Center White Box */
@@ -70,9 +115,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     background: white;
+    
 }
 
 /* Center Red Circle */
@@ -81,8 +127,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     background: red;
     border-radius: 50%;
 }

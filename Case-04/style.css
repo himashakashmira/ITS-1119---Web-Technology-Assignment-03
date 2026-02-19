@@ -1,0 +1,33 @@
+body { 
+    margin: 0; 
+    padding: 20px; 
+    font-family: sans-serif; 
+}
+
+.card {
+    width: 90%;
+    max-width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    border: 1px solid #555;
+    position: relative;
+}
+
+.header {
+    position: absolute;
+    position: sticky;
+    top: 0;
+    background: #d32f2f;
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-weight: bold;
+}

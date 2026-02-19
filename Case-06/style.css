@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 100vh;
+}
+
+
+.red {
+    background: red;
+    grid-column: span 2;
+}
+
+.green { 
+    background: green; 
+}
+
+
+.orange {
+    background: #ff4500;
+    grid-column: 4;
+    grid-row: 1 / span 3;
+}
+
+.purple-mid { 
+    background: #800080; 
+}
+
+.pink-mid { 
+    background: #ff1493; 
+}
+
+.blue-mid { 
+    background: blue; 
+}
+
+.brown-bottom { 
+    background: #a52a2a; 
+}
+
+
+.dark-purple-bottom {
+    background: #4b0082;
+    grid-column: span 2;
+}

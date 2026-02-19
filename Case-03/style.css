@@ -1,0 +1,25 @@
+body { 
+    margin: 0; 
+    background: white; 
+}
+
+.element {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    background: #8e24aa;
+    color: white;
+    font-size: 24px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    /* two circle borders */
+    border: 15px solid #d32f2f;
+    outline: 15px solid #a1887f;
+}
