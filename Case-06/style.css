@@ -27,24 +27,24 @@ body {
     grid-row: 1 / span 3;
 }
 
-.purple-mid { 
+.purple { 
     background: #800080; 
 }
 
-.pink-mid { 
+.pink { 
     background: #ff1493; 
 }
 
-.blue-mid { 
+.blue { 
     background: blue; 
 }
 
-.brown-bottom { 
+.brown { 
     background: #a52a2a; 
 }
 
 
-.dark-purple-bottom {
+.dark-purple {
     background: #4b0082;
     grid-column: span 2;
 }
